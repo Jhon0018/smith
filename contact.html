@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Emily Smith</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">Emily Smith</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contacto</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contáctame</h1>
+            <p class="page-subtitle">¿Tienes un proyecto en mente? Me encantaría escuchar de ti</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Hablemos</h2>
+                    <p>Estoy siempre emocionada de colaborar en nuevos proyectos creativos. 
+                       Ya sea que necesites una identidad de marca completa, material impreso o contenido digital, 
+                       estoy aquí para ayudarte a hacer realidad tu visión.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>emily@emilysmith.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Teléfono</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Ubicación</h3>
+                                <p>Ciudad, País</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Horario</h3>
+                                <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <h3>Sígueme en redes sociales</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" title="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="#" class="social-link" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Envíame un mensaje</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Presupuesto estimado</label>
+                            <select id="budget" name="budget">
+                                <option value="">Selecciona un rango</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000+">$5,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Timeline del proyecto</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Selecciona un plazo</option>
+                                <option value="asap">Lo antes posible</option>
+                                <option value="1-2weeks">1-2 semanas</option>
+                                <option value="1month">1 mes</option>
+                                <option value="2-3months">2-3 meses</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Cuéntame sobre tu proyecto, objetivos y cualquier información relevante..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message hidden">
+                        <div class="success-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>¡Mensaje enviado con éxito!</h3>
+                            <p>Gracias por contactarme. He recibido tu mensaje y te responderé en un plazo de 24 horas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Respuestas a las dudas más comunes</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es tu proceso de trabajo?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Mi proceso incluye una consulta inicial, investigación y análisis, desarrollo de conceptos, 
+                           presentación de propuestas, revisiones y entrega final. Mantengo comunicación constante 
+                           durante todo el proyecto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo toma completar un proyecto?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo varía según la complejidad del proyecto. Un logotipo puede tomar 1-2 semanas, 
+                           mientras que una identidad de marca completa puede requerir 4-6 semanas. 
+                           Siempre establecemos plazos claros desde el inicio.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuántas revisiones incluyes?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Incluyo hasta 3 rondas de revisiones en todos mis proyectos. Esto asegura que el resultado 
+                           final cumpla con tus expectativas y objetivos. Revisiones adicionales pueden aplicar 
+                           cargos extras.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Trabajas con clientes internacionales?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Absolutamente! Trabajo con clientes de todo el mundo. Utilizo herramientas digitales 
+                           para mantener comunicación fluida y garantizar que la distancia no sea un obstáculo 
+                           para crear diseños excepcionales.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué archivos recibo al finalizar el proyecto?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recibes todos los archivos de trabajo en formatos vectoriales y rasterizados, 
+                           incluyendo AI, EPS, PDF, PNG y JPG en alta resolución. También incluyo un brief 
+                           con especificaciones técnicas para uso futuro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Emily Smith</h3>
+                    <p>Diseñadora gráfica apasionada por crear experiencias visuales memorables.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="portfolio.html">Portafolio</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> emily@emilysmith.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Emily Smith. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

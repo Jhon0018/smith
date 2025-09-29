@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Emily Smith</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">Emily Smith</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link active">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Mi Portafolio</h1>
+            <p class="page-subtitle">Una colección de mis trabajos más destacados en diseño gráfico</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="print">Impreso</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+                <button class="filter-btn" data-filter="illustration">Ilustración</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://media.istockphoto.com/id/1292374288/photo/brand-logo-name-identity-and-customer-concept-chalk-board-background.jpg?s=1024x1024&w=is&k=20&c=IIiaMFQjM8NmJEe0lUcOMY4ghxtpu2npxcOtZR0gfEE=" alt="Conceptos de branding e identidad corporativa para TechStart">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Identidad Corporativa TechStart</h3>
+                                <p>Desarrollo completo de marca para startup tecnológica</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Branding</span>
+                                    <span class="tag">Logo Design</span>
+                                </div>
+                                <a href="#" class="btn btn-small" onclick="openModal('modal1')">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/34046709/pexels-photo-34046709.jpeg" alt="Diseño digital y contenido para redes sociales de FoodDelight">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Campaña Digital FoodDelight</h3>
+                                <p>Gráficos para redes sociales y contenido digital</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Social Media</span>
+                                    <span class="tag">Digital</span>
+                                </div>
+                                <a href="#" class="btn btn-small" onclick="openModal('modal2')">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/8837786/pexels-photo-8837786.jpeg" alt="Diseño editorial y maquetación de revista corporativa EcoLife">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Revista Corporativa EcoLife</h3>
+                                <p>Diseño editorial y maquetación de revista trimestral</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Editorial</span>
+                                    <span class="tag">Print</span>
+                                </div>
+                                <a href="#" class="btn btn-small" onclick="openModal('modal3')">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/34024765/pexels-photo-34024765.jpeg" alt="Rediseño de marca y packaging para CafeLocal">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Rediseño de Marca CafeLocal</h3>
+                                <p>Renovación completa de identidad visual</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Rebranding</span>
+                                    <span class="tag">Packaging</span>
+                                </div>
+                                <a href="#" class="btn btn-small" onclick="openModal('modal4')">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/6384042/pexels-photo-6384042.jpeg" alt="Ilustraciones coloridas para libro infantil">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Ilustraciones Libro Infantil</h3>
+                                <p>Serie de ilustraciones para libro de cuentos</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Ilustración</span>
+                                    <span class="tag">Infantil</span>
+                                </div>
+                                <a href="#" class="btn btn-small" onclick="openModal('modal5')">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" alt="Carteles y material promocional para festival musical">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Material Promocional Festival</h3>
+                                <p>Carteles, flyers y merchandising para evento musical</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Poster Design</span>
+                                    <span class="tag">Event</span>
+                                </div>
+                                <a href="#" class="btn btn-small" onclick="openModal('modal6')">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Identidad Corporativa TechStart</h2>
+            <img src="https://media.istockphoto.com/id/1292374288/photo/brand-logo-name-identity-and-customer-concept-chalk-board-background.jpg?s=1024x1024&w=is&k=20&c=IIiaMFQjM8NmJEe0lUcOMY4ghxtpu2npxcOtZR0gfEE=" alt="Detalles del Proyecto 1">
+            <div class="modal-info">
+                <p><strong>Cliente:</strong> TechStart Inc.</p>
+                <p><strong>Proyecto:</strong> Desarrollo completo de identidad corporativa para startup tecnológica</p>
+                <p><strong>Servicios:</strong> Logo design, paleta de colores, tipografía, aplicaciones de marca</p>
+                <p><strong>Descripción:</strong> Creación de una identidad visual moderna y tecnológica que refleje la innovación y confiabilidad de la empresa. El proyecto incluyó el diseño del logotipo, manual de marca y aplicaciones en diversos materiales.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Campaña Digital FoodDelight</h2>
+            <img src="https://images.pexels.com/photos/34046709/pexels-photo-34046709.jpeg" alt="Detalles de la campaña digital para FoodDelight">
+            <div class="modal-info">
+                <p><strong>Cliente:</strong> FoodDelight Restaurant</p>
+                <p><strong>Proyecto:</strong> Campaña completa para redes sociales</p>
+                <p><strong>Servicios:</strong> Gráficos para redes sociales, posts, stories, banners web</p>
+                <p><strong>Descripción:</strong> Desarrollo de contenido visual para aumentar la presencia digital del restaurante, incluyendo posts promocionales, menús digitales y material para stories de Instagram.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Revista Corporativa EcoLife</h2>
+            <img src="https://images.pexels.com/photos/8837786/pexels-photo-8837786.jpeg" alt="Detalles del diseño editorial de EcoLife">
+            <div class="modal-info">
+                <p><strong>Cliente:</strong> EcoLife Foundation</p>
+                <p><strong>Proyecto:</strong> Diseño editorial de revista trimestral</p>
+                <p><strong>Servicios:</strong> Maquetación, diseño editorial, infografías</p>
+                <p><strong>Descripción:</strong> Diseño y maquetación de revista corporativa de 32 páginas enfocada en sostenibilidad ambiental, incluyendo infografías y elementos visuales que complementan el contenido.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add modals for projects 4, 5, and 6 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Rediseño de Marca CafeLocal</h2>
+            <img src="https://images.pexels.com/photos/34024765/pexels-photo-34024765.jpeg" alt="Detalles del rediseño de marca CafeLocal">
+            <div class="modal-info">
+                <p><strong>Cliente:</strong> CafeLocal</p>
+                <p><strong>Proyecto:</strong> Renovación completa de identidad visual</p>
+                <p><strong>Servicios:</strong> Rebranding, packaging, señalética</p>
+                <p><strong>Descripción:</strong> Modernización de la marca para un café local, incluyendo nuevo logotipo, diseño de packaging para productos y renovación de la imagen del local.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Ilustraciones Libro Infantil</h2>
+            <img src="https://images.pexels.com/photos/6384042/pexels-photo-6384042.jpeg" alt="Detalles de las ilustraciones para libro infantil">
+            <div class="modal-info">
+                <p><strong>Cliente:</strong> Editorial Pequeños Lectores</p>
+                <p><strong>Proyecto:</strong> Serie de ilustraciones para libro de cuentos</p>
+                <p><strong>Servicios:</strong> Ilustración digital, diseño de personajes</p>
+                <p><strong>Descripción:</strong> Creación de 15 ilustraciones coloridas y expresivas para un libro de cuentos infantiles, desarrollando personajes únicos y escenarios imaginativos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Material Promocional Festival</h2>
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" alt="Detalles del material promocional para festival">
+            <div class="modal-info">
+                <p><strong>Cliente:</strong> Festival de Música Alternativa</p>
+                <p><strong>Proyecto:</strong> Material promocional completo para evento</p>
+                <p><strong>Servicios:</strong> Poster design, flyers, merchandising</p>
+                <p><strong>Descripción:</strong> Diseño de toda la comunicación visual del festival, incluyendo carteles principales, flyers promocionales y diseño para camisetas y merchandising oficial.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Emily Smith</h3>
+                    <p>Diseñadora gráfica apasionada por crear experiencias visuales memorables.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="portfolio.html">Portafolio</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> emily@emilysmith.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Emily Smith. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
